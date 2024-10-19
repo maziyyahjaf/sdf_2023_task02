@@ -136,7 +136,7 @@ public class Server {
             
             }
 
-            // sendProductInfo.close();
+            sendProductInfo.close();
 
         } catch (IOException e) {
             e.printStackTrace();

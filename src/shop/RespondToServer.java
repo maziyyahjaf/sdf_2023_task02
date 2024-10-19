@@ -31,7 +31,7 @@ public class RespondToServer {
                                                                                                // price(descending)
                 .toArray(Product[]::new);
 
-        Arrays.stream(sortedProducts).forEach(System.out::println);
+        // Arrays.stream(sortedProducts).forEach(System.out::println);
 
         return sortedProducts;
     }
@@ -46,7 +46,7 @@ public class RespondToServer {
 
         Integer remainingBudget = budget;
 
-        System.out.println("budget before selecting:" + budget);
+        // System.out.println("budget before selecting:" + budget);
 
         for (Product product : sortedProducts) {
             if (product.getPrice() > remainingBudget) {
@@ -58,8 +58,8 @@ public class RespondToServer {
 
         }
 
-        System.out.println("budget after selecting:" + remainingBudget);
-        System.out.println("selected products: " + selectedProducts);
+        // System.out.println("budget after selecting:" + remainingBudget);
+        // System.out.println("selected products: " + selectedProducts);
 
         // Update class variables for totalSpent and remaining budget
         this.totalSpent = budget - remainingBudget;
@@ -77,7 +77,7 @@ public class RespondToServer {
             selectedProductId.add(product.getId());
         }
 
-        System.out.println(selectedProductId);
+        // System.out.println(selectedProductId);
 
         return selectedProductId;
     }
@@ -90,7 +90,7 @@ public class RespondToServer {
             totalSpent += product.getPrice();
         }
 
-        System.out.println("spent: " + totalSpent);
+        // System.out.println("spent: " + totalSpent);
         return totalSpent;
     }
 

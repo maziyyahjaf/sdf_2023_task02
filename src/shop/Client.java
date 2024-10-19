@@ -109,8 +109,9 @@ public class Client {
 
             objectWriter.flush();
 
+
             // bw.close();
-            // receiveProductInfo.close();
+            receiveProductInfo.close();
 
         } catch (UnknownHostException e) {
             e.printStackTrace();
